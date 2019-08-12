@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite]]" parallel="none">
+  <listeners>
+    <listener class-name="com.gmailtest.ExtentReportListener.ExtentReporterNG"/>
+    <listener class-name="Analyzer.RetryListenerClass"/>
+  </listeners>
+  <test name="Test(failed)(failed)" parallel="none">
+    <classes>
+      <class name="TestCases.StarMailCountTest">
+        <methods>
+          <include name="CountStarMail"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- TestCases.StarMailCountTest -->
+      <class name="TestCases.ComposeTest">
+        <methods>
+          <include name="close"/>
+          <include name="checkSentAMail"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCases.ComposeTest -->
+      <class name="TestCases.SettingTest">
+        <methods>
+          <include name="close"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCases.SettingTest -->
+      <class name="TestCases.LabelTest">
+        <methods>
+          <include name="Checklabel"/>
+          <include name="CreateLabel"/>
+          <include name="close"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCases.LabelTest -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

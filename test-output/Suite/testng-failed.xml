@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <listeners>
+    <listener class-name="com.gmailtest.ExtentReportListener.ExtentReporterNG"/>
+    <listener class-name="Analyzer.RetryListenerClass"/>
+  </listeners>
+  <test name="Test(failed)" parallel="none">
+    <classes>
+      <class name="TestCases.StarMailCountTest">
+        <methods>
+          <include name="CountStarMail"/>
+          <include name="TearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCases.StarMailCountTest -->
+      <class name="TestCases.UnReadMailTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCases.UnReadMailTest -->
+      <class name="TestCases.ComposeTest">
+        <methods>
+          <include name="close"/>
+          <include name="checkSentAMail"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCases.ComposeTest -->
+      <class name="TestCases.LabelTest">
+        <methods>
+          <include name="Checklabel"/>
+          <include name="CreateLabel"/>
+          <include name="close"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCases.LabelTest -->
+      <class name="TestCases.AllMailCountTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.AllMailCountTest -->
+      <class name="TestCases.LoginPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- TestCases.LoginPageTest -->
+      <class name="TestCases.SettingTest">
+        <methods>
+          <include name="SettingLogoTest"/>
+          <include name="close"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCases.SettingTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
